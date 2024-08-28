@@ -1,0 +1,10 @@
+@FilmesApi_HostAddress = http://localhost:5210
+
+POST {{FilmesApi_HostAddress}}/filme/ 
+Content-type: application/json
+{
+    "Titulo": "teste",
+    "Genero": "Testando",
+    "Duracao": 10
+}
+###
