@@ -3,8 +3,36 @@
 POST {{FilmesApi_HostAddress}}/filme/ 
 Content-type: application/json
 {
-    "Titulo": "teste",
-    "Genero": "Testando",
-    "Duracao": 10
+    "Titulo": "Piratas do Car",
+    "Genero": "Aventura",
+    "Duracao": 250
 }
+###
+GET {{FilmesApi_HostAddress}}/filme
+Content-type: application/json
+
+###
+
+GET {{FilmesApi_HostAddress}}/filme/0
+Content-type: application/json
+
+###
+
+
+PUT {{FilmesApi_HostAddress}}/filme/3
+Content-type: application/json
+{
+    "Titulo": "Piratas do Caribe e o Bar da Morte",
+    "Genero": "Aventura",
+    "Duracao": 250
+}
+###
+
+PATCH {{FilmesApi_HostAddress}}/filme/3
+Content-type: application/json
+[{
+    "op": "replace",
+    "path": "/titulo",
+    "value": "Avatar"
+}]
 ###
