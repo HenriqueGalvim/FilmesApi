@@ -3,7 +3,7 @@
 POST {{FilmesApi_HostAddress}}/filme/ 
 Content-type: application/json
 {
-    "Titulo": "Piratas do Car",
+    "Titulo": "Piratas do Caribe: O fim do mundo",
     "Genero": "Aventura",
     "Duracao": 250
 }
@@ -13,7 +13,7 @@ Content-type: application/json
 
 ###
 
-GET {{FilmesApi_HostAddress}}/filme/0
+GET {{FilmesApi_HostAddress}}/filme/1
 Content-type: application/json
 
 ###
@@ -35,4 +35,35 @@ Content-type: application/json
     "path": "/titulo",
     "value": "Avatar"
 }]
+###
+
+POST {{FilmesApi_HostAddress}}/endereco/ 
+Content-type: application/json
+{
+"Logradouro":"Rua Joaquim Alves Simões",
+"Numero": 3088
+}
+###
+
+POST {{FilmesApi_HostAddress}}/cinema/ 
+Content-type: application/json
+{
+"Nome":"Alura Cinemas2",
+"EnderecoId": 1
+}
+###
+GET {{FilmesApi_HostAddress}}/cinema/ 
+Content-type: application/json
+###
+
+
+POST {{FilmesApi_HostAddress}}/sessao/ 
+Content-type: application/json
+{
+"FilmeId":2,
+"CinemaId" : 1
+}
+###
+GET {{FilmesApi_HostAddress}}/sessao/ 
+Content-type: application/json
 ###
