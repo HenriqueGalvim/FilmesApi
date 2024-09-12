@@ -18,3 +18,4 @@ Este projeto demonstra a implementação de relacionamentos entre entidades util
 1. Clone este repositório:
    ```bash
    git clone [URL do repositório]
+2. Não esqueça de configurar as configurações do Banco de Dados, estou utilizando o PostgresSql
