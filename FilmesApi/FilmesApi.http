@@ -8,12 +8,12 @@ Content-type: application/json
     "Duracao": 250
 }
 ###
-GET {{FilmesApi_HostAddress}}/filme
+GET {{FilmesApi_HostAddress}}/filme?nomeCinema=Alura%20Cinemas2
 Content-type: application/json
 
 ###
 
-GET {{FilmesApi_HostAddress}}/filme/1
+GET {{FilmesApi_HostAddress}}/filme
 Content-type: application/json
 
 ###
@@ -48,11 +48,16 @@ Content-type: application/json
 POST {{FilmesApi_HostAddress}}/cinema/ 
 Content-type: application/json
 {
-"Nome":"Alura Cinemas2",
-"EnderecoId": 1
+"Nome":"Alura Cinemas213",
+"EnderecoId": 2
 }
 ###
-GET {{FilmesApi_HostAddress}}/cinema/ 
+###
+
+GET {{FilmesApi_HostAddress}}/endereco/
+Content-type: application/json
+###
+GET {{FilmesApi_HostAddress}}/cinema/
 Content-type: application/json
 ###
 
@@ -60,8 +65,8 @@ Content-type: application/json
 POST {{FilmesApi_HostAddress}}/sessao/ 
 Content-type: application/json
 {
-"FilmeId":2,
-"CinemaId" : 1
+"FilmeId":4,
+"CinemaId" : 4
 }
 ###
 GET {{FilmesApi_HostAddress}}/sessao/ 
